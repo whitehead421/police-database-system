@@ -1,0 +1,106 @@
+.wanted {
+  display: flex;
+  background: #fff;
+  .wantedContainer {
+    flex: 6;
+    .wantedWidgets {
+      position: relative;
+      margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      .addWantedRecord {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        border-radius: 50%;
+      }
+      // TEK
+
+      .wantedItem {
+        margin: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        width: 210px;
+
+        .wantedItemTop {
+          position: relative;
+          cursor: pointer;
+          &:hover > .wantedLevel {
+            height: 280px;
+          }
+
+          img {
+            width: 210px;
+            height: 280px;
+            object-fit: cover;
+          }
+
+          .wantedLevel {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            height: 15px;
+            width: 100%;
+            transition: all 1s ease;
+          }
+
+          .highLevel {
+            background: rgba(206, 0, 0, 0.8);
+          }
+          .midLevel {
+            background: rgba(19, 123, 207, 0.8);
+          }
+          .lowLevel {
+            background: rgba(42, 165, 121, 0.8);
+          }
+        }
+        .wantedItemBottom {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          .wantedName {
+            font-weight: 700;
+          }
+          .wantedDate {
+            font-size: 12px;
+          }
+          .highLevelText {
+            color: rgba(206, 0, 0, 0.8);
+          }
+          .midLevelText {
+            color: rgba(19, 123, 207, 0.8);
+          }
+          .lowLevelText {
+            color: rgba(42, 165, 121, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .maptohover {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    opacity: 0.5;
+    object-fit: contain;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      height: 70%;
+      opacity: 1;
+      border-radius: 0;
+    }
+  }
+}

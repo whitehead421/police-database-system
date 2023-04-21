@@ -1,0 +1,226 @@
+.report {
+  display: flex;
+  background: #fff;
+  .reportContainer {
+    flex: 6;
+    .pageWrapper {
+      display: flex;
+      height: calc(100% - 51px);
+      .item {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+        .backgroundLogo {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.1;
+          width: 100%;
+          height: 350px;
+          object-fit: contain;
+          filter: grayscale(100%);
+        }
+        form {
+          .formItem {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .rprBtn {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              justify-content: center;
+              padding: 10px;
+              border-radius: 5px;
+              background-color: #111;
+              color: #fff;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              &:hover {
+                background-color: #333;
+              }
+            }
+          }
+          textarea,
+          input,
+          select {
+            resize: vertical;
+            border: none;
+            outline: none;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+          }
+
+          .rprInput {
+            width: 100%;
+            box-sizing: border-box;
+          }
+          textarea {
+            min-height: 100px;
+            max-height: 200px;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+          }
+          select {
+            box-sizing: border-box;
+          }
+        }
+        // preview
+        .preview {
+          position: relative;
+          border: 1px solid #ccc;
+          height: 100%;
+          padding: 10px;
+          z-index: 1;
+          ::selection {
+            color: white;
+            background: #00417a;
+          }
+          ::-moz-selection {
+            color: white;
+            background: #00417a;
+          }
+
+          .pdTitle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+
+          .previewContent {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+            font-weight: 500;
+
+            .previewTags {
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              .tag {
+                font-style: italic;
+              }
+            }
+          }
+
+          .previewFooter {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            .wrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              align-items: center;
+              .previewSign {
+                font-family: "Mr De Haviland", cursive;
+                letter-spacing: 2px;
+                font-size: 30px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// react-tag-input styles
+.ReactTags__tags {
+  position: relative;
+  box-sizing: border-box;
+
+  input {
+    margin-top: 20px;
+  }
+
+  .ReactTags__selected {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    .ReactTags__tag {
+      position: relative;
+      display: flex;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 5px;
+      background: #00417a;
+      color: #fff;
+      font-size: 14px;
+      .ReactTags__remove {
+        position: absolute;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+        background: #777;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+        &:hover {
+          background: #555;
+        }
+      }
+    }
+  }
+}
+
+.linkTags {
+  .ReactTags__tags {
+    position: relative;
+    box-sizing: border-box;
+
+    input {
+      margin-top: 20px;
+    }
+
+    .ReactTags__selected {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      .ReactTags__tag {
+        display: none;
+        position: relative;
+        .ReactTags__remove {
+          position: absolute;
+          right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          border: none;
+          border-radius: 50%;
+          background: #777;
+          color: #fff;
+          cursor: pointer;
+          transition: background 0.2s ease-in-out;
+          &:hover {
+            background: #555;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.announcement {
+  display: flex;
+  background: #fff;
+
+  .announcementContainer {
+    flex: 6;
+
+    .announcementWidgets {
+      position: relative;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .addAnnouncement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 50px;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        border-radius: 50%;
+      }
+      .refreshAnnouncement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        background-color: #00417a;
+        color: white;
+        border-radius: 50%;
+      }
+
+      .widget {
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .widgetWrapper {
+        position: relative;
+        .deleteButton {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 10px;
+          right: 10px;
+          background-color: rgba(255, 0, 0, 0.05);
+          color: crimson;
+          font-weight: 600;
+          cursor: pointer;
+          border: 1px solid transparent;
+          &:hover {
+            background-color: rgba(255, 0, 0, 0.1);
+            color: rgb(255, 20, 60);
+          }
+        }
+
+        .adderProfile {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          display: flex;
+          align-items: center;
+          .profilePic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+
+          .nameDate {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            .adderName {
+              font-size: 14px;
+              font-weight: 600;
+            }
+
+            .date {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

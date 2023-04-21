@@ -1,0 +1,136 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 230, 230);
+  min-height: 100vh;
+  background-color: white;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00417a;
+    }
+
+    .logoimg {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 230, 230);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #00417a21;
+          transition: ease-in 0.2s;
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        .notification {
+          position: relative;
+          display: flex;
+          align-items: center;
+          .counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+          }
+        }
+
+        .icon {
+          position: relative;
+          font-size: 18px;
+          color: #00417a;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: rgb(99, 99, 99);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    align-items: center;
+    margin: 10px;
+
+    .sidebarInfo {
+      display: flex;
+      flex-direction: column;
+      .version {
+        font-size: 10px;
+        color: #999;
+        display: flex;
+        align-items: center;
+      }
+      .icon {
+        font-size: 10px;
+        color: #00417a;
+      }
+    }
+
+    .colorOptions {
+      display: flex;
+      align-items: center;
+      .colorOption {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+
+        border-radius: 5px;
+        border: 1px solid #00417a;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          background-color: whitesmoke;
+        }
+        &:nth-child(2) {
+          background-color: #333;
+        }
+      }
+    }
+  }
+}

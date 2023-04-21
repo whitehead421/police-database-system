@@ -1,0 +1,77 @@
+.licenseList {
+  display: flex;
+  width: 100%;
+  .licenseListContainer {
+    background-color: white;
+    flex: 6;
+    .licenses {
+      position: relative;
+      height: calc(100vh - 100px);
+      .addLicense {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        color: green;
+        background-color: transparent;
+        z-index: 1;
+      }
+
+      .addLicenseContainer {
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+.alertifyContent {
+  .alertifyTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+    }
+  }
+  .alertifyBottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    .alertifyBottomLeft,
+    .alertifyBottomRight {
+      flex: 1;
+      .alertifyItem {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 20px;
+        .alertifyKey {
+          font-weight: 600;
+          font-size: 15px;
+        }
+        .alertifyValue {
+          font-weight: 300;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  width: 100%;
+
+  .listContainer {
+    background-color: white;
+    flex: 6;
+    .listWrapper {
+      position: relative;
+      height: calc(100vh - 100px);
+      .addOfficer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        color: green;
+        background-color: transparent;
+        z-index: 1;
+      }
+    }
+  }
+}

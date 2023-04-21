@@ -1,0 +1,94 @@
+.wantedWidget {
+  background: #fff;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  .araniyor {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00417a;
+    animation: siren 2s infinite;
+    @keyframes siren {
+      0% {
+        color: #00417a;
+      }
+      50% {
+        color: #f00;
+      }
+      100% {
+        color: #00417a;
+      }
+    }
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: flex-start;
+
+    .wantedWidgetName {
+      flex: 3;
+      font-weight: 800;
+    }
+
+    .wantedWidgetReason {
+      flex: 5;
+      font-weight: 400;
+    }
+
+    .lastSeen {
+      flex: 5;
+      color: #999;
+      font-weight: 400;
+    }
+
+    .officer {
+      flex: 5;
+      color: rgb(6, 18, 255);
+      font-weight: 300;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .see {
+      border: 1px dotted black;
+      padding: 5px 10px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background: #eee;
+      }
+    }
+    .delete {
+      border: 1px dotted red;
+      padding: 5px 10px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}

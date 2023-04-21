@@ -1,0 +1,390 @@
+.app {
+  a {
+    color: #555;
+  }
+}
+
+.app.dark {
+  a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+  }
+  background: #111;
+  color: rgb(200, 200, 200);
+
+  .navbar {
+    background: #111;
+    color: rgb(200, 200, 200);
+    border-color: #333;
+    .wrapper {
+      .search {
+        border-color: #333;
+        input {
+          color: rgb(200, 200, 200);
+          &::placeholder {
+            color: rgb(100, 100, 100);
+          }
+        }
+      }
+    }
+  }
+
+  .wantedWidget {
+    background: #111;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+
+    .info {
+      .wantedWidgetName {
+        border-color: #333;
+      }
+      .wantedWidgetReason {
+        border-color: #333;
+      }
+      .lastSeen {
+        border-color: #333;
+      }
+      .officer {
+        color: rgb(145, 149, 230);
+      }
+    }
+
+    .action {
+      .see {
+        color: rgb(200, 200, 200);
+        &:hover {
+          background: rgb(145, 149, 230);
+          color: #111;
+        }
+      }
+      .delete {
+        color: rgb(200, 200, 200);
+        &:hover {
+          background: rgb(145, 149, 230);
+          color: #111;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    color: rgb(200, 200, 200);
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+
+    .notification {
+      .counter {
+        color: white;
+      }
+    }
+
+    hr {
+      border-color: #333;
+    }
+
+    .center {
+      ul {
+        li {
+          &:hover {
+            background-color: #333;
+            span {
+              color: #fff;
+            }
+            .icon {
+              color: #fff;
+            }
+          }
+          span {
+            color: #999;
+          }
+        }
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: white;
+      border: none;
+      .MuiDataGrid-cell:hover {
+        color: #fff;
+        background-color: #222;
+        font-weight: bold;
+      }
+      // root
+      .MuiPaginationItem-root {
+        border: 1px solid #333;
+        color: #fff;
+      }
+      // selected
+      .Mui-selected {
+        background-color: #fff;
+        color: #000;
+      }
+      // hover
+      .MuiPaginationItem-root:hover {
+        background-color: #fff;
+        color: #000;
+      }
+      // mui data grid box shadow
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.47);
+    }
+  }
+
+  .announcement {
+    background: #111;
+    .announcementContainer {
+      .announcementWidgets {
+        .addAnnouncement {
+          color: rgb(145, 149, 230);
+        }
+        .widget {
+          background-color: #111;
+          -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          .title {
+            color: rgb(200, 200, 200);
+          }
+          .content {
+            color: rgb(100, 100, 100);
+          }
+          .link {
+            color: rgb(100, 100, 100);
+            border-bottom: 0.5px solid rgb(100, 100, 100);
+          }
+        }
+      }
+    }
+  }
+
+  .popup-inner {
+    background: #111;
+
+    .announcementTitle {
+      background: #333;
+    }
+
+    .announcementContent {
+      background: #333;
+    }
+
+    .addAnnouncementButton {
+      background: #333;
+    }
+  }
+
+  .single {
+    .singleContainer {
+      .top {
+        .left {
+          -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+
+          .details {
+            .itemTitle {
+              color: rgb(200, 200, 200);
+            }
+
+            .detailItem {
+              margin-bottom: 10px;
+              font-size: 14px;
+              color: rgb(200, 200, 200);
+
+              .itemKey {
+                font-weight: bold;
+                margin-right: 5px;
+              }
+
+              .itemValue {
+                font-weight: 100px;
+              }
+            }
+          }
+
+          .editButton {
+            color: rgb(145, 149, 230);
+            background: #333;
+            &:hover {
+              background: rgb(145, 149, 230);
+              color: #111;
+            }
+          }
+        }
+        .right {
+          -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          .chartGrid {
+            stroke: rgb(41, 41, 41);
+          }
+        }
+      }
+    }
+  }
+
+  .list {
+    .listContainer {
+      background-color: #111;
+      .listWrapper {
+        .addOfficer {
+          color: rgb(145, 149, 230);
+        }
+      }
+    }
+  }
+
+  .licenseList {
+    .licenseListContainer {
+      background-color: #111;
+      .addLicense {
+        color: rgb(145, 149, 230);
+      }
+      .addLicenseContainer {
+        background-color: #111;
+
+        .addLicenseButton {
+          color: rgb(145, 149, 230);
+          background: #333;
+          &:hover {
+            background: rgb(145, 149, 230);
+            color: #111;
+          }
+        }
+
+        input {
+          color: rgb(200, 200, 200);
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  .report {
+    background-color: #111;
+    .reportContainer {
+      .pageWrapper {
+        .item {
+          textarea,
+          input {
+            color: rgb(200, 200, 200);
+            background-color: transparent;
+          }
+
+          select {
+            color: rgb(200, 200, 200);
+            background-color: transparent;
+            option {
+              color: black;
+              background-color: transparent;
+              &:disabled {
+                color: rgb(200, 200, 200);
+              }
+            }
+          }
+
+          .rprBtn {
+            color: rgb(145, 149, 230);
+            background: #333;
+            border: 1px solid #333;
+            &:hover {
+              background: rgb(145, 149, 230);
+              color: #111;
+              border: 1px solid #333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .event {
+    .eventContainer {
+      background-color: #111;
+    }
+  }
+
+  .wanted {
+    .wantedContainer {
+      .wantedItem {
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+      }
+    }
+  }
+
+  .internal {
+    background: #111;
+    .internalContainer {
+      .fileListContainer {
+        .fileSearch {
+          input {
+            color: rgb(200, 200, 200);
+          }
+        }
+        ul {
+          li {
+            &:hover {
+              background-color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fts {
+    .ftsContainer {
+      background-color: #111;
+    }
+  }
+
+  .wanted {
+    .wantedContainer {
+      background-color: #111;
+    }
+  }
+
+  .home {
+    .homeContainer {
+      background-color: #111;
+    }
+  }
+
+  .dispatch {
+    .dispatchContainer {
+      background-color: #111;
+      .chatContainer {
+        background-color: #111;
+        #chat-wrap {
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+          border: none;
+          #header {
+            color: rgb(200, 200, 200);
+            background-color: #111;
+          }
+          #chat-window {
+            #output strong {
+              color: rgb(200, 200, 200);
+            }
+            #output {
+              background-color: #222;
+              color: rgb(200, 200, 200);
+            }
+          }
+          #message {
+            background-color: #111;
+            color: rgb(200, 200, 200);
+            border-top: 1px solid #333;
+          }
+        }
+      }
+    }
+  }
+}
